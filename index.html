@@ -10,13 +10,14 @@
 
     <meta
         name="description"
-        content="1licktreat is an online bakery offering fresh pastries, cupcakes, and custom cakes."
+        content="1licktreat is an online bakery offering fresh pastries, cupcakes, desserts, and custom celebration cakes."
     >
 
     <title>1licktreat | Freshly Baked Happiness</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
@@ -31,12 +32,12 @@
     <nav class="navbar">
         <div class="nav-container">
 
-            <a href="#home" class="logo">
-                <span class="logo-icon">🍰</span>
+            <a href="#home" class="logo" aria-label="1licktreat home">
+                <span class="logo-mark" aria-hidden="true">1L</span>
                 <span>1licktreat</span>
             </a>
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="primary-navigation">
                 <li>
                     <a href="#home" class="active">Home</a>
                 </li>
@@ -61,6 +62,7 @@
                 type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
+                aria-controls="primary-navigation"
             >
                 <span></span>
                 <span></span>
@@ -103,7 +105,7 @@
                 <div class="hero-features">
 
                     <div class="feature">
-                        <span class="feature-icon">✓</span>
+                        <span class="feature-icon" aria-hidden="true">✓</span>
 
                         <div>
                             <strong>Freshly Made</strong>
@@ -112,7 +114,7 @@
                     </div>
 
                     <div class="feature">
-                        <span class="feature-icon">✓</span>
+                        <span class="feature-icon" aria-hidden="true">✓</span>
 
                         <div>
                             <strong>Quality Ingredients</strong>
@@ -126,13 +128,22 @@
 
             <div class="hero-visual">
 
-                <div class="hero-image-placeholder">
-                    <span class="hero-image-icon">🧁</span>
-                    <p>Bakery Hero Image</p>
+                <div class="hero-image-wrapper">
+                    <img
+                        src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=85"
+                        alt="A beautiful selection of freshly prepared bakery desserts"
+                        class="hero-image"
+                    >
+
+                    <div class="hero-image-overlay"></div>
+
+                    <div class="hero-image-caption">
+                        Handcrafted with care
+                    </div>
                 </div>
 
                 <div class="floating-card">
-                    <span>⭐</span>
+                    <span class="floating-rating" aria-hidden="true">4.9</span>
 
                     <div>
                         <strong>Customer Favourite</strong>
@@ -167,9 +178,12 @@
 
                 <article class="product-card">
 
-                    <div class="product-image croissant-image">
-                        <span>🥐</span>
-                        <p>Croissant Image</p>
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+                            alt="Freshly baked golden butter croissants"
+                            loading="lazy"
+                        >
 
                         <div class="product-badge">
                             Popular
@@ -188,7 +202,11 @@
                             layers and a light, soft centre.
                         </p>
 
-                        <button type="button" class="card-button">
+                        <button
+                            type="button"
+                            class="card-button"
+                            data-product="Butter Croissant"
+                        >
                             Add to Order
                         </button>
 
@@ -198,9 +216,12 @@
 
                 <article class="product-card">
 
-                    <div class="product-image cupcake-image">
-                        <span>🧁</span>
-                        <p>Cupcake Image</p>
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=85"
+                            alt="Vanilla cupcakes topped with creamy frosting"
+                            loading="lazy"
+                        >
 
                         <div class="product-badge">
                             Best Seller
@@ -219,7 +240,11 @@
                             creamy frosting and colourful sprinkles.
                         </p>
 
-                        <button type="button" class="card-button">
+                        <button
+                            type="button"
+                            class="card-button"
+                            data-product="Vanilla Cupcake"
+                        >
                             Add to Order
                         </button>
 
@@ -229,9 +254,12 @@
 
                 <article class="product-card">
 
-                    <div class="product-image cake-image">
-                        <span>🎂</span>
-                        <p>Custom Cake Image</p>
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                            alt="Elegant custom celebration cake"
+                            loading="lazy"
+                        >
 
                         <div class="product-badge">
                             Made to Order
@@ -250,7 +278,11 @@
                             birthdays, weddings, and special celebrations.
                         </p>
 
-                        <button type="button" class="card-button">
+                        <button
+                            type="button"
+                            class="card-button"
+                            data-product="Custom Cake"
+                        >
                             Request a Cake
                         </button>
 
@@ -268,13 +300,60 @@
 
         </section>
 
+        <section class="experience-section">
+
+            <div class="experience-container">
+
+                <article class="experience-card">
+                    <span class="experience-number">01</span>
+
+                    <div>
+                        <h3>Made Fresh</h3>
+                        <p>
+                            Our pastries and desserts are carefully prepared
+                            in fresh batches for excellent taste and texture.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="experience-card">
+                    <span class="experience-number">02</span>
+
+                    <div>
+                        <h3>Beautifully Presented</h3>
+                        <p>
+                            Every order is finished and packaged with careful
+                            attention to detail.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="experience-card">
+                    <span class="experience-number">03</span>
+
+                    <div>
+                        <h3>Made for You</h3>
+                        <p>
+                            We create personalised treats for birthdays,
+                            weddings, gifts, and special occasions.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
         <section class="about-section" id="about">
 
             <div class="about-container">
 
                 <div class="about-image">
-                    <span>🍪</span>
-                    <p>Bakery Story Image</p>
+                    <img
+                        src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1100&q=85"
+                        alt="A professional baker preparing fresh pastries"
+                        loading="lazy"
+                    >
                 </div>
 
                 <div class="about-content">
@@ -349,7 +428,10 @@
 
             <div>
                 <a href="#home" class="logo footer-logo">
-                    <span class="logo-icon">🍰</span>
+                    <span class="logo-mark footer-logo-mark" aria-hidden="true">
+                        1L
+                    </span>
+
                     <span>1licktreat</span>
                 </a>
 
@@ -366,12 +448,19 @@
             </div>
 
             <p class="copyright">
-                &copy; 2026 1licktreat. All rights reserved.
+                &copy; <span id="current-year">2026</span>
+                1licktreat. All rights reserved.
             </p>
 
         </div>
 
     </footer>
+
+    <div
+        class="order-notification"
+        role="status"
+        aria-live="polite"
+    ></div>
 
     <script src="./src/script.js"></script>
 
