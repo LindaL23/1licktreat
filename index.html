@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="1licktreat is an online bakery offering fresh pastries, cupcakes, and custom cakes."
+    >
+
+    <title>1licktreat | Freshly Baked Happiness</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS file inside the src folder -->
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+           </button>
+
+<div class="menu-overlay"></div>
+            <a href="#home" class="logo">
+                <span class="logo-icon">🍰</span>
+                <span>1licktreat</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <a href="#menu" class="nav-button">Order Now</a>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <p class="hero-label">Freshly baked every day</p>
+
+                <h1>
+                    Sweet moments begin with
+                    <span>one delicious lick.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover handcrafted pastries, beautiful cupcakes, and
+                    custom cakes prepared with quality ingredients and a
+                    generous touch of sweetness.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="primary-button">
+                        Explore Our Menu
+                    </a>
+
+                    <a href="#about" class="secondary-button">
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="hero-features">
+
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+
+                        <div>
+                            <strong>Freshly Made</strong>
+                            <p>Baked daily with care</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+
+                        <div>
+                            <strong>Quality Ingredients</strong>
+                            <p>Only the finest flavours</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="hero-image-placeholder">
+                    <span class="hero-image-icon">🧁</span>
+                    <p>Bakery Hero Image</p>
+                </div>
+
+                <div class="floating-card">
+                    <span>⭐</span>
+
+                    <div>
+                        <strong>Customer Favourite</strong>
+                        <p>Custom celebration cakes</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Product Menu -->
+        <section class="products-section" id="menu">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">Our favourites</p>
+                    <h2>Fresh from the bakery</h2>
+                </div>
+
+                <p class="section-description">
+                    Choose from our carefully prepared selection of pastries,
+                    cupcakes, and celebration cakes.
+                </p>
+
+            </div>
+
+            <div class="product-grid">
+
+                <!-- Product Card 1 -->
+                <article class="product-card">
+
+                    <div class="product-image croissant-image">
+                        <span>🥐</span>
+                        <p>Croissant Image</p>
+
+                        <div class="product-badge">
+                            Popular
+                        </div>
+                    </div>
+
+                    <div class="product-content">
+
+                        <div class="product-heading">
+                            <h3>Butter Croissant</h3>
+                            <span class="price">GH₵25</span>
+                        </div>
+
+                        <p>
+                            A golden and flaky pastry with delicate buttery
+                            layers and a light, soft centre.
+                        </p>
+
+                        <button type="button" class="card-button">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+
+                    <div class="product-image cupcake-image">
+                        <span>🧁</span>
+                        <p>Cupcake Image</p>
+
+                        <div class="product-badge">
+                            Best Seller
+                        </div>
+                    </div>
+
+                    <div class="product-content">
+
+                        <div class="product-heading">
+                            <h3>Vanilla Cupcake</h3>
+                            <span class="price">GH₵20</span>
+                        </div>
+
+                        <p>
+                            A soft vanilla cupcake topped with smooth,
+                            creamy frosting and colourful sprinkles.
+                        </p>
+
+                        <button type="button" class="card-button">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+
+                    <div class="product-image cake-image">
+                        <span>🎂</span>
+                        <p>Custom Cake Image</p>
+
+                        <div class="product-badge">
+                            Made to Order
+                        </div>
+                    </div>
+
+                    <div class="product-content">
+
+                        <div class="product-heading">
+                            <h3>Custom Cake</h3>
+                            <span class="price">From GH₵350</span>
+                        </div>
+
+                        <p>
+                            A beautifully designed cake personalised for
+                            birthdays, weddings, and special celebrations.
+                        </p>
+
+                        <button type="button" class="card-button">
+                            Request a Cake
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="menu-action">
+                <a href="#contact" class="primary-button">
+                    View Full Bakery Menu
+                </a>
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+
+            <div class="about-container">
+
+                <div class="about-image">
+                    <span>🍪</span>
+                    <p>Bakery Story Image</p>
+                </div>
+
+                <div class="about-content">
+
+                    <p class="section-label">About us</p>
+
+                    <h2>
+                        Baked with care, shared with love.
+                    </h2>
+
+                    <p>
+                        At 1licktreat, we believe that every celebration
+                        deserves something sweet. Our products are handcrafted
+                        in small batches to provide excellent taste, freshness,
+                        and quality in every bite.
+                    </p>
+
+                    <p>
+                        Whether you need a simple afternoon treat or a
+                        personalised cake for an important occasion, we are
+                        ready to create something memorable for you.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="secondary-button dark-border"
+                    >
+                        Contact Our Bakery
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-container">
+
+                <div>
+                    <p class="section-label light-label">
+                        Place your order
+                    </p>
+
+                    <h2>
+                        Ready to satisfy your sweet cravings?
+                    </h2>
+
+                    <p>
+                        Contact 1licktreat today to order pastries,
+                        cupcakes, or a custom cake for your next celebration.
+                    </p>
+                </div>
+
+                <a
+                    href="mailto:hello@1licktreat.com"
+                    class="contact-button"
+                >
+                    Contact Us
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-icon">🍰</span>
+                    <span>1licktreat</span>
+                </a>
+
+                <p>
+                    Freshly baked happiness, made especially for you.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 1licktreat. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
