@@ -15,7 +15,6 @@
 
     <title>1licktreat | Freshly Baked Happiness</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -24,23 +23,14 @@
         rel="stylesheet"
     >
 
-    <!-- CSS file inside the src folder -->
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
 
-            <button class="menu-toggle" type="button" aria-label="Open navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-           </button>
-
-<div class="menu-overlay"></div>
             <a href="#home" class="logo">
                 <span class="logo-icon">🍰</span>
                 <span>1licktreat</span>
@@ -66,10 +56,22 @@
 
             <a href="#menu" class="nav-button">Order Now</a>
 
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <div class="menu-overlay"></div>
+
     <header class="hero" id="home">
         <div class="hero-container">
 
@@ -145,7 +147,6 @@
 
     <main>
 
-        <!-- Product Menu -->
         <section class="products-section" id="menu">
 
             <div class="section-heading">
@@ -164,7 +165,6 @@
 
             <div class="product-grid">
 
-                <!-- Product Card 1 -->
                 <article class="product-card">
 
                     <div class="product-image croissant-image">
@@ -196,7 +196,6 @@
 
                 </article>
 
-                <!-- Product Card 2 -->
                 <article class="product-card">
 
                     <div class="product-image cupcake-image">
@@ -228,7 +227,6 @@
 
                 </article>
 
-                <!-- Product Card 3 -->
                 <article class="product-card">
 
                     <div class="product-image cake-image">
@@ -270,7 +268,6 @@
 
         </section>
 
-        <!-- About Section -->
         <section class="about-section" id="about">
 
             <div class="about-container">
@@ -314,7 +311,6 @@
 
         </section>
 
-        <!-- Contact Section -->
         <section class="contact-section" id="contact">
 
             <div class="contact-container">
@@ -347,7 +343,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
 
         <div class="footer-container">
@@ -377,6 +372,8 @@
         </div>
 
     </footer>
+
+    <script src="./src/script.js"></script>
 
 </body>
 </html>
